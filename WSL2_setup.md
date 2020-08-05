@@ -17,6 +17,20 @@ This script is MEMO of installing and setup for WSL2.
 1. call command (on powershell)
 1. check a version of the distributions & change version
 
+## How to change WSL version
+- WSL2が有効であるかの確認。
+WSL2が有効な場合、以下コマンドが通る。標準出力が得られない場合、WSL2が使える環境になっていない。
+
+```
+$ wsl -l -v
+```
+
+WSL2が有効であるとして、以下のコマンドを実行することで各ディストリビューションのバージョンを変更することが出来る。
+
+```
+wsl --set-version <distribution name> 1or2
+```
+
 ## Note
 - error1
 
